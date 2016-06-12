@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #e4e4e4;
+    background: #333;
+    padding: 0.2em;
+}
+
+div#labels {
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+h3.label-int {
+    float: left;
+    width: 40%;
+}
+
+h3.label-part {
+    float: right;
+    text-align: right;
+    width: 40%;
+}
+
+div#interview {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+div {
+    clear: both;
+}
+
+p {
+    padding:20px;
+    margin:20px 20px 40px;
+    position:relative;
+    border-radius:5px;
+    clear: both;
+}
+
+p.Interviewer {
+    margin-right: 140px;
+    background: #e8e8e8;
+    float: left;
+}
+p.Interviewer:after {
+    content:"";
+    width:0;
+    height:0;
+    border-top:20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #e8e8e8;
+    border-left:none;
+    right:auto;
+    left:-20px;
+    position: absolute;
+    top:10px;
+}
+
+p.interrupt {
+    margin-top: -40px;
+}
+
+p.Participant {
+    margin-left: 140px;
+    background:#b8ffc9;
+    float: right;
+}
+p.Participant:after {
+    content:"";
+    width:0;
+    height:0;
+    border-top:20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #b8ffc9;
+    right:-20px;
+    position: absolute;
+    top:10px;
+}
+
+p.Context {
+    margin: 0 auto 15px;
+    width: 92%;
+    background:#b2ecff;
+    text-align: center;
+}
+
+span.stmtid {
+    position: absolute;
+    bottom: -1.4em;
+    font-size: 0.7em;
+    color: #666;
+}
+
+.Interviewer span.stmtid {
+    left: 20px;
+}
+
+.Participant span.stmtid {
+    right: 20px;
+}
+
+.context {
+    font-style: italic;
+    font-size: 90%;
+    opacity: 0.6;
+}
+
+.context:before {
+    content: " ~";
+}
+
+.context:after {
+    content: "~ ";
+}
+
+.deaf, .semi-deaf {
+    color: #b00;
+    padding: 0 1.2em;
+    background: rgba(255, 100, 100, 0.3);
+}
+
+q {
+    font-style: italic;
+}
